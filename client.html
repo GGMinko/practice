@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WebSocket Client</title>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <style>
+      body {
+          padding: 20px;
+      }
+
+      .files,
+      .downloaded {
+          margin-top: 20px;
+      }
+
+      .file-block {
+          margin-bottom: 10px;
+      }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>WebSocket Client</h2>
+    <div class="input-group mb-3">
+        <input type="text" id="keyword" class="form-control" placeholder="Enter keyword">
+        <div class="input-group-append">
+            <button id="request-keyword" class="btn btn-primary">Request</button>
+        </div>
+    </div>
+    <h3>Files by keyword: </h3>
+    <div class="files"></div>
+    <h3>Local saved files: </h3>
+    <div class="downloaded"></div>
+  </div>
+
+  <script src="client.js"></script>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</body>
+</html>
